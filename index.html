@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>FED Talks | HTML5 Canvas Basics</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="./css/styles.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">FED Talks | Anesca Dames</div>
+                <div class="intro-heading text-uppercase">HTML5 Canvas Basics</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">What is Canvas?</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ul class="cool-list">
+                        <li>An element <code>&#60;canvas&#62;&#60;/canvas&#62;</code></li>
+                        <li>Provides a space to draw graphics on the fly using Javascript</li>
+                        <li>If you were to inspect element on the HTML code you would not see anything 
+                            inside of the canvas element as the graphics drawn inside of it are <strong>not</strong> 
+                            part of the DOM</li>
+                        <li>Can have many canvas elements on a page and they can overlap eachother</li>
+                        <li>Canvas graphics cen be drawn in 2D or 3D</li>
+                    </ul>
+
+                    <img class="img-responsive" src="./img/canvasgrid.png" />
+
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h3 class="section-heading">Examples of cool sh*t made with Canvas</h3>
+
+                    <ul class="cool-list">
+                        <li>
+                            <a target="_blank" href="http://www.thewildernessdowntown.com/">
+                                The Wilderness Downtown (Interactive film)
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://dougx.net/plunder/plunder.html">
+                                Galactic Plunder (Game)
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://alteredqualia.com/canvasmol/">
+                                Canvas Mol (Learning tool)
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 1 -->
+    <section class="bg-light page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase">Example 1 - Empty Canvas</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 content">
+
+                    <canvas id="canvas1" width="400" height="300">
+                        Your browser does not support canvas.
+                    </canvas>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 2 -->
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase">Example 2 - Rectangles</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 content">
+
+                    <canvas id="canvas2" width="500" height="300">
+                        Your browser does not support canvas.
+                    </canvas>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 3 -->
+    <section class="bg-light page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase">Example 3 - Lines</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12 content">
+
+                    <p>Basic line</p>
+                    <canvas id="canvas3" width="500" height="200">
+                        Your browser does not support canvas.
+                    </canvas>
+    
+                    <br><br>
+    
+                    <p>3 different types of line caps (butt, round, square):</p>
+                    <canvas id="canvas3_1" width="500" height="200">
+                        Your browser does not support canvas.
+                    </canvas>
+    
+                    <br><br>
+    
+                    <p>3 different types of line joins (round, bevel, miter):</p>
+                    <canvas id="canvas3_2" width="500" height="200">
+                        Your browser does not support canvas.
+                    </canvas>
+
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 4 -->
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase">Example 4 - Using loops to draw</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 content">
+
+                    <canvas id="canvas4" width="500" height="300">
+                        Your browser does not support canvas.
+                    </canvas>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 5 -->
+    <section class="bg-light page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase">Example 5 - Paths</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 content">
+
+                    <canvas id="canvas5" width="700" height="300">
+                        Your browser does not support canvas.
+                    </canvas>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 6 -->
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase">Example 6 - Arcs</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 content">
+
+                    <p>Quarter arcs going clockwise and anti-clockwise</p>
+                    <canvas id="canvas6" width="600" height="600">
+                        Your browser does not support canvas.
+                    </canvas>
+                    <p>Half an arc and a full circle</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 7 -->
+    <section class="bg-light page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase">Example 7 - Text</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 content">
+
+                    <canvas id="canvas7" width="600" height="300">
+                        Your browser does not support canvas.
+                    </canvas>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
